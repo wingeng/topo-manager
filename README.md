@@ -4,12 +4,17 @@ Network Topology Manager
 A simple visual editor for creating a network topology. The JSON output is used to configure VMs in Virtual Box.
 
 
-To run, start the simple python web server by running
+To run, start the Flask python web server by running. 
 
 <pre>
 ./startme
 </pre>
 
+Note: you may need to install flask via 'pip'
+
+<pre>
+sudo pip install flask
+</pre>
 
 Then point your browser to 
 
