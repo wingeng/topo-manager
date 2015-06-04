@@ -1,1 +1,15 @@
-python -m SimpleHTTPServer
+#!/usr/bin/env python
+
+from flask import Flask, url_for, send_file, redirect
+
+app = Flask(__name__)
+
+# To have flask re-read this file when changed
+app.debug = True
+
+@app.route('/')
+def index():
+    return redirect(url_for("static", filename="config_vmm.html"))
+
+if __name__ == '__main__':
+    app.run("192.168.0.110")
